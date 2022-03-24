@@ -28,10 +28,10 @@ set newWord(anotherWord){
     this.word=anotherWord;
 }
 addPage(){
-    this.page +=1;
+    this.page += 1;
 }
 resetPage(){
-    this.page =1; 
+    this.page = 1; 
 }
 }
   

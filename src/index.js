@@ -2,6 +2,9 @@ import './sass/main.scss';
 import NewApi from './js/fatchImages';
 import card from './hbs/card.hbs';
 import Notiflix from 'notiflix';
+import LoadMoreBtn from './js/LoadMoreBtn';
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const refs = {
     searchForm: document.querySelector('.search-form'),
@@ -31,8 +34,7 @@ function onSearch(e) {
 
     function clearImageCards() {
            refs.articlesContainer.innerHTML = '';
-      
-    }
+          }
 // newsApiService.getImages().then(({ hits, totalHits }) => {
 //   if (newsApiService.searchWord === '') {
 //     Notiflix.Notify.info(`Enter any word`)
